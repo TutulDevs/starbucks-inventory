@@ -10,6 +10,8 @@ module.exports = {
         "aside-xl": "235px",
         "aside-md": "89px",
         "aside-sm": "0px",
+        "search-xl": "392px",
+        "user-xl": "178px",
       },
       height: {
         main: "calc(100vh - 64px)",
