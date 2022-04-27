@@ -12,4 +12,12 @@
   h1 {
     @apply text-[20px] leading-8 font-bold;
   }
+
+  .link {
+    @apply h-full px-3 flex gap-x-[13px] items-center text-sm font-medium leading-[17px] tracking-[0.02em] text-neutral-7 rounded hover:bg-white shadow-none hover:shadow-link transition-all duration-300;
+  }
+
+  .linkActive {
+    @apply bg-white text-primary shadow-link;
+  }
 }

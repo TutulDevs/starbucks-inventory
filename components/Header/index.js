@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header className="h-16 px-6 md:px-9 py-3 border-b border-neutral-2 flex gap-x-3 items-center bg-white">
       {/* button part */}
-      <div className="lg:w-aside-xl h-full">
+      <div className="md:w-aside-lg h-full">
         <button
           type="button"
           className="w-[110px] h-full flex items-center justify-center text-sm font-medium leading-5 text-neutral-9"
@@ -22,7 +22,7 @@ export const Header = () => {
       </div>
 
       {/* Search part */}
-      <div className="h-full hidden md:block">
+      <div className="h-full hidden sm:block">
         <SearchBar />
       </div>
 

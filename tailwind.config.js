@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        "aside-xl": "235px",
+        "aside-lg": "235px",
         "aside-md": "89px",
         "aside-sm": "0px",
         "search-xl": "392px",
@@ -40,6 +40,11 @@ module.exports = {
       "neutral-3": "#D2D2D5",
       "neutral-2": "#E5E5E6",
       "neutral-2a": "#F2F2F3",
+    },
+    screens: {
+      sm: "391px",
+      md: "801px",
+      lg: "1441px",
     },
   },
   plugins: [],

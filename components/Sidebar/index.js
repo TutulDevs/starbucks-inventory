@@ -1,15 +1,23 @@
+import Image from "next/image";
 import Link from "next/link";
 import { navigationLinks } from "../../mock/navigationLinks";
 
 export const Sidebar = () => {
   return (
-    <aside className="w-aside-xl border-r border-neutral-2">
-      <ul className="px-6 py-4 flex flex-col gap-y-2">
-        {navigationLinks.map((item) => (
-          <li key={item.id} className="h-10">
+    <aside className="hidden sm:block w-aside-md md:w-aside-lg border-r border-neutral-2">
+      <ul className="px-[18px] py-4 flex flex-col gap-y-2">
+        {navigationLinks.map((item, idx) => (
+          <li key={item.id} className="h-10 w-10 md:w-auto">
             <Link href={"/" + item.path}>
-              <a className="h-full px-3 flex items-center text-sm font-medium leading-[17px] tracking-[0.02em] text-neutral-7 rounded hover:bg-white shadow-none hover:shadow-link transition-all duration-300">
-                {item.label}
+              <a className={`link ${idx === 1 ? "linkActive" : ""}`}>
+                <Image
+                  src={item.icon}
+                  alt={item.label}
+                  width={15}
+                  height={20}
+                />
+
+                <span className="hidden md:block">{item.label}</span>
               </a>
             </Link>
           </li>
