@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const SearchBar = () => {
   return (
-    <div className="w-search-xl h-full rounded-[8px] pl-3 flex items-center bg-neutral-2">
+    <div className="w-search-xl h-10 rounded-[8px] pl-3 flex items-center bg-neutral-2">
       <Image src="/search.svg" alt="search icon" width={16} height={16} />
 
       <input

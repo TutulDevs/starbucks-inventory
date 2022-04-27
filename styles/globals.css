@@ -10,7 +10,7 @@
   }
 
   h1 {
-    @apply text-[20px] leading-8 font-bold;
+    @apply text-[20px] leading-8 font-bold text-neutral-9;
   }
 
   .link {
@@ -19,5 +19,25 @@
 
   .linkActive {
     @apply bg-white text-primary shadow-link;
+  }
+
+  .checkbox {
+    @apply appearance-none h-[17.5px] w-[17.5px] border border-neutral-3 rounded-sm bg-white checked:bg-primary checked:border-primary focus:outline-none transition duration-200  cursor-pointer;
+  }
+
+  thead {
+    @apply h-10 bg-warning-1 border-b border-neutral-2;
+  }
+
+  th {
+    @apply capitalize text-[13px] font-medium leading-5 text-neutral-9 text-left;
+  }
+
+  td {
+    @apply text-base font-normal leading-6 text-neutral-9;
+  }
+
+  .clickable {
+    @apply cursor-pointer;
   }
 }
