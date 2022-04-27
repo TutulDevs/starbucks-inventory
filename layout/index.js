@@ -1,20 +1,26 @@
 import React from "react";
+import { FooterNav } from "../components/FooterNav";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 
 export const PageLayout = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Header */}
-      <Header />
+    <>
+      <div className="min-h-screen flex flex-col">
+        {/* Header */}
+        <Header />
 
-      <main className="flex h-main">
-        {/* sidebar */}
-        <Sidebar />
+        <main className="flex h-main">
+          {/* sidebar */}
+          <Sidebar />
 
-        {/* content */}
-        <section className="flex-1">{children}</section>
-      </main>
-    </div>
+          {/* content */}
+          <section className="flex-1">{children}</section>
+        </main>
+      </div>
+
+      {/* footer nav - fixed position */}
+      <FooterNav />
+    </>
   );
 };

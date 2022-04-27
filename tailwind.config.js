@@ -15,6 +15,7 @@ module.exports = {
       },
       height: {
         main: "calc(100vh - 64px)",
+        footer: "72px",
       },
       boxShadow: {
         link: "0px 3px 1px rgba(20, 40, 82, 0.08), 0px 24px 24px rgba(20, 40, 82, 0.04)",
