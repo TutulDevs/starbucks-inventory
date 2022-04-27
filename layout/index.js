@@ -15,7 +15,12 @@ export const PageLayout = ({ children }) => {
           <Sidebar />
 
           {/* content */}
-          <section className="flex-1">{children}</section>
+          <section className="flex-1">
+            {children}
+
+            {/* to lift the main section */}
+            <div className="sm:hidden h-footer mt-2" />
+          </section>
         </main>
       </div>
 

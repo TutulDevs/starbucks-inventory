@@ -47,4 +47,40 @@ export const tableData = [
     },
     price: 10,
   },
+  {
+    id: 5,
+    date: "11 Nov 2021",
+    title: "Hammer",
+    details: "This is a hammer to do work with",
+    status: 0,
+    quantity: {
+      collected: 200,
+      total: 300,
+    },
+    price: 10,
+  },
+  {
+    id: 6,
+    date: "11 Nov 2021",
+    title: "Hammer",
+    details: "This is a hammer to do work with",
+    status: 0,
+    quantity: {
+      collected: 200,
+      total: 300,
+    },
+    price: 10,
+  },
+  {
+    id: 7,
+    date: "11 Nov 2021",
+    title: "Hammer L",
+    details: "This is a hammer to do work with",
+    status: 0,
+    quantity: {
+      collected: 200,
+      total: 300,
+    },
+    price: 10,
+  },
 ];
