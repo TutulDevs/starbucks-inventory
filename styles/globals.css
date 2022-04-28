@@ -40,4 +40,12 @@
   .clickable {
     @apply cursor-pointer;
   }
+
+  .selectBox {
+    @apply h-8 px-2 border border-neutral-5 rounded shadow-select flex items-center justify-between text-[13px] font-medium leading-5 tracking-[0.02em] text-neutral-8;
+  }
+
+  .nextPrev {
+    @apply w-10 h-8 px-2 border border-neutral-5 rounded shadow-select flex items-center justify-center;
+  }
 }
